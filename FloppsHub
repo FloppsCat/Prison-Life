@@ -43,6 +43,15 @@ PlayerTab:AddSlider({
  end    
 })
 
+PlayerTab:AddTextbox({
+ Name = "Speed",
+ Default = "1 - 10000",
+ TextDisappear = true,
+ Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+ end   
+})
+
 
 --other tab
 
